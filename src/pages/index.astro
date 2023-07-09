@@ -1,14 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Test from "../components/test.svelte";
+import Login from '../components/login.svelte';
 ---
 
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Astro." client:only>
     <main>
         <h1>Welcome to <span class='text-gradient'>Astro</span></h1>
+        <Login />
 
-
-        <Test/>
     </main>
 </Layout>
